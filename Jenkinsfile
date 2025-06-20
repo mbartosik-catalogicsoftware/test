@@ -1,5 +1,5 @@
 node("docker") {
     stage('Get Install Builder') {
-        sh "py python-test.py"
+        sh "python3 python-test.py"
     }
 } 
