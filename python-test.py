@@ -1,3 +1,4 @@
+import os
 import requests
 
 # Test downloading the license file
