@@ -10,7 +10,7 @@ print(f"CA Certificate: {ca_cert}")
 
 try:
     # Test with default SSL verification (should fail)
-    response = requests.get(url, verify=ca_cert)
+    response = requests.get(url)
     print("SUCCESS: Download worked!")
     print(f"File size: {len(response.content)} bytes")
 except Exception as e:
