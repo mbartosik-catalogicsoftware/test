@@ -1,4 +1,4 @@
-node("docker") {
+node("windows2019") {
     stage('Get Install Builder') {
         checkout scm
         sh 'ls -la'
