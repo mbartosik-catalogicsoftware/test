@@ -1,6 +1,6 @@
-node("windows2019") {
+node("docker") {
     stage('Get Install Builder') {
         checkout scm
-        bat "py python-test.py"
+        sh "python3 python-test.py"
     }
 } 
