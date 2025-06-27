@@ -9,7 +9,6 @@ print(f"URL: {url}")
 print(os.getenv('REQUESTS_CA_BUNDLE'))
 
 try:
-    # Test with default SSL verification (should fail)
     response = requests.get(url)
     print("SUCCESS: Download worked!")
     print(f"File size: {len(response.content)} bytes")
